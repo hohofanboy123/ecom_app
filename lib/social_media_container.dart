@@ -20,7 +20,7 @@ class SocialMediaContainer extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: getWidth(10)),
         padding: EdgeInsets.all(getWidth(12)),
-        height: getHeight(40),
+        height: getHeight(41),
         width: getWidth(40),
         decoration: BoxDecoration(
           color: Colors.grey.withOpacity(0.3),
