@@ -46,12 +46,17 @@ class SignInScreen extends StatelessWidget {
                     hintTxt: "Enter your password",
                     icon: Icons.lock_outlined,
                   ),
-                  const Row(
+                  Row(
                     children: [
-                      CheckBoxExample(),
-                      Text("Remember me"),
-                      Spacer(),
-                      Text("Forgot password?", style: TextStyle(decoration: TextDecoration.underline),),
+                      const CheckBoxExample(),
+                      const Text("Remember me"),
+                      const Spacer(),
+                      InkWell(
+                        onTap: () {
+                          Navigator.pushNamed(context, RouteNames.forgetPassword);
+                        },
+                        child: const Text("Forgot password?", style: TextStyle(decoration: TextDecoration.underline),)
+                      ),
                     ],
                   ),
                   SizedBox(height: getHeight(20),),
@@ -70,7 +75,8 @@ class SignInScreen extends StatelessWidget {
                   ),
                   SocialMediaContainer(
                     icon: "assets/icons/facebook-2.svg",
-                  ),SocialMediaContainer(
+                  ),
+                  SocialMediaContainer(
                     icon: "assets/icons/twitter.svg",
                   )
                 ],

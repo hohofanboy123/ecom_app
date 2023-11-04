@@ -5,7 +5,6 @@ import 'package:ecom_app/size_config.dart';
 import 'package:flutter/material.dart';
 
 import '../route_name.dart';
-import '../social_media_container.dart';
 
 class OtpVerification extends StatelessWidget {
   const OtpVerification({super.key});

@@ -1,4 +1,5 @@
 import 'package:ecom_app/authentication/complete_profile.dart';
+import 'package:ecom_app/authentication/forget_password.dart';
 import 'package:ecom_app/authentication/otp_verify.dart';
 import 'package:ecom_app/authentication/sign_up.dart';
 import 'package:ecom_app/boarding/boarding.dart';
@@ -12,4 +13,5 @@ final Map<String, WidgetBuilder> routes = {
   RouteNames.signUp:          (context) => const SignUpScreen(),
   RouteNames.otpVerification: (context) => const OtpVerification(),
   RouteNames.completeProfile: (context) => const CompleteProfile(),
+  RouteNames.forgetPassword:  (context) => const ForgetPassword(),
 };

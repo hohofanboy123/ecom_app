@@ -13,29 +13,30 @@ class AppTheme {
           elevation: 0,
           iconTheme: IconThemeData(color: Colors.black),
           titleTextStyle: TextStyle(color: Colors.black)),
-      textTheme: TextTheme(
-        displayLarge: 
-          TextStyle(
-            color: mainColor,
-            fontSize: getWidth(40),
-            fontWeight: FontWeight.bold
-          ),
-        bodyLarge:
-          TextStyle(
-            color: Colors.black,
-            fontSize: getWidth(30),
-            fontWeight: FontWeight.bold
-          ),
-        bodyMedium:
-          TextStyle(
-            color: textColor,
-            fontSize: getWidth(15),
-          ),
-        bodySmall: 
-          const TextStyle(
-            color: textColor
-          ),
-      ),
+      textTheme: 
+        TextTheme(
+          displayLarge: 
+            TextStyle(
+              color: mainColor,
+              fontSize: getWidth(40),
+              fontWeight: FontWeight.bold
+            ),
+          bodyLarge:
+            TextStyle(
+              color: Colors.black,
+              fontSize: getWidth(30),
+              fontWeight: FontWeight.bold
+            ),
+          bodyMedium:
+            TextStyle(
+              color: textColor,
+              fontSize: getWidth(15),
+            ),
+          bodySmall: 
+            const TextStyle(
+              color: textColor
+            ),
+        ),
       inputDecorationTheme: const InputDecorationTheme(
         floatingLabelBehavior: FloatingLabelBehavior.always,
         contentPadding: EdgeInsets.symmetric(horizontal: 42, vertical: 20),

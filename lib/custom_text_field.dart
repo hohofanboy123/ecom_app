@@ -32,7 +32,6 @@ class CustomTextField extends StatelessWidget{
         ),
     );
   }
-  
 }
 
 class OtpTextField extends StatelessWidget {

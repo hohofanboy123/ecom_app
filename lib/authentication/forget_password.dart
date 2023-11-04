@@ -3,11 +3,11 @@ import 'package:ecom_app/custom_text_field.dart';
 import 'package:ecom_app/size_config.dart';
 import 'package:flutter/material.dart';
 
+import '../constants.dart';
 import '../route_name.dart';
-import '../social_media_container.dart';
 
-class SignUpScreen extends StatelessWidget {
-  const SignUpScreen({super.key});
+class ForgetPassword extends StatelessWidget {
+  const ForgetPassword({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,11 +21,11 @@ class SignUpScreen extends StatelessWidget {
             children: [
               SizedBox(height: getHeight(50),),
               Text(
-                "Register account",
+                "Forgot Password",
                 style: Theme.of(context).textTheme.bodyLarge,
               ),
               Text(
-                "Complete your details or continue\nwith social media",
+                "Please enter your email and we will send\nyou a link to return to your account",
                 style: Theme.of(context).textTheme.bodyMedium,
                 textAlign: TextAlign.center,
               ),
@@ -38,21 +38,7 @@ class SignUpScreen extends StatelessWidget {
                     hintTxt: "Enter your email",
                     icon: Icons.email_outlined,
                   ),
-                  SizedBox(height: getHeight(30),),
-                  const CustomTextField(
-                    obsecure: true,
-                    labelTxt: "Password",
-                    hintTxt: "Enter your password",
-                    icon: Icons.lock_outlined,
-                  ),
-                  SizedBox(height: getHeight(30),),
-                  const CustomTextField(
-                    obsecure: true,
-                    labelTxt: "Confirm Password",
-                    hintTxt: "Re-enter your password",
-                    icon: Icons.lock_outlined,
-                  ),
-                  SizedBox(height: getHeight(40),),
+                  SizedBox(height: getHeight(100),),
                   CustomButton(
                     text: "Continue",
                     press: (){
@@ -61,27 +47,19 @@ class SignUpScreen extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(height: getHeight(60),),
-              const Row(
+              SizedBox(height: getHeight(100),),
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SocialMediaContainer(
-                    icon: "assets/icons/google-icon.svg",
-                  ),
-                  SocialMediaContainer(
-                    icon: "assets/icons/facebook-2.svg",
-                  ),
-                  SocialMediaContainer(
-                    icon: "assets/icons/twitter.svg",
+                  const Text("Don't have an account? "),
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, RouteNames.signUp);
+                    },
+                    child: const Text("Sign up", style: TextStyle(color: mainColor),),
                   )
                 ],
               ),
-              SizedBox(height: getHeight(20),),
-              Text(
-                "By continuing your confirm that you agree",
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.bodySmall,  
-              )
             ],
           ),
         ),

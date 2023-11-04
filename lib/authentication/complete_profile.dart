@@ -58,7 +58,7 @@ class CompleteProfile extends StatelessWidget {
                   CustomButton(
                     text: "Continue",
                     press: (){
-                      Navigator.pushNamed(context, RouteNames.otpVerification);
+                      
                     }
                   ),
                 ],
