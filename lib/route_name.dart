@@ -5,4 +5,5 @@ class RouteNames {
   static const String otpVerification = "authentication/otp_verify.dart";
   static const String completeProfile = "authentication/complete_profile.dart";
   static const String forgetPassword  = "authentication/forget_password.dart";
+  static const String home            = "home/home.dart";
 }

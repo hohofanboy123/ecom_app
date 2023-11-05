@@ -10,6 +10,7 @@ class BoardingPage extends StatefulWidget {
   const BoardingPage({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _BoardingPageState createState() => _BoardingPageState();
 }
 

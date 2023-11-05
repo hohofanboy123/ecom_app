@@ -9,17 +9,23 @@ class AppTheme {
       scaffoldBackgroundColor: Colors.white,
       fontFamily: "Muli",
       appBarTheme: const AppBarTheme(
-          color: Colors.white,
-          elevation: 0,
-          iconTheme: IconThemeData(color: Colors.black),
-          titleTextStyle: TextStyle(color: Colors.black)),
+        color: Colors.white,
+        elevation: 0,
+        iconTheme: IconThemeData(color: Colors.black),
+        titleTextStyle: TextStyle(color: Colors.black)),
       textTheme: 
         TextTheme(
           displayLarge: 
             TextStyle(
               color: mainColor,
               fontSize: getWidth(40),
-              fontWeight: FontWeight.bold
+              fontWeight: FontWeight.w800
+            ),
+          displayMedium: 
+            TextStyle(
+              color: Colors.black,
+              fontSize: getWidth(20),
+              fontWeight: FontWeight.w800
             ),
           bodyLarge:
             TextStyle(

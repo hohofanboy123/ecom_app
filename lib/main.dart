@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Ecom App Orange',
       theme: AppTheme.appThemeStyle(context),
-      initialRoute: RouteNames.boarding,
+      initialRoute: RouteNames.home,
       routes: routes,
     );
   }
