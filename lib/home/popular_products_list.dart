@@ -42,22 +42,15 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(right: 20),
+      margin: const EdgeInsets.only(right: 20),
       width: getWidth(150),
       child: Column(
         children: [
-          Container(
-            padding: EdgeInsets.all(getWidth(20)),
-            decoration: BoxDecoration(
-              color: secondColor.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(15),
-            ),
-            child: Image.asset("assets/images/Image Popular Product 1.png"),
-          ),
+          Image.asset("assets/images/Image Popular Product 1.png"),
           const SizedBox(height: 10),
           Text(
             product.title,
-            style: TextStyle(color: Colors.black),
+            style: Theme.of(context).textTheme.bodyMedium,
             maxLines: 2,
           ),
           Row(

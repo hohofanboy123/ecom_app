@@ -84,6 +84,7 @@ class HomeScreen extends StatelessWidget {
                     const Text("See more")
                   ],
                 ),
+                SizedBox(height: getHeight(20),),
                 const PopularProducts(),
               ],
             ),
